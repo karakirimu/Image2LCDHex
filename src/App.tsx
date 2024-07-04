@@ -63,7 +63,7 @@ function App() {
   return (<>
     <Navbar isBordered isBlurred position="static">
       <NavbarBrand>
-        <p className="font-bold text-inherit">Image2LCDHex</p>
+        <p className="font-bold text-inherit">Image -> LCD Hex</p>
       </NavbarBrand>
       <NavbarContent justify="end">
         <Button isIconOnly title="GitHub" variant="light" className="text-lg font-bold" radius="full" onClick={openUrl}><GrGithub/></Button>
