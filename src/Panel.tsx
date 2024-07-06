@@ -114,6 +114,7 @@ export default function Panel(props: PanelProps) {
             if(ctx){
               (imageRef.current as unknown as HTMLCanvasElement).innerHTML = '';
               (imageRef.current as unknown as HTMLCanvasElement).appendChild(img);
+              ctx.clearRect(0, 0, props.width, props.height);
               ctx.drawImage(img, 0, 0, props.width, props.height);
               setImageId(crypto.randomUUID())
             }
